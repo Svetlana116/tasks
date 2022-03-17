@@ -1,3 +1,10 @@
+/*
+Нам дан список слов, нужно найти слова, которые имеют анаграммы в данном списке. Анаграмма - это когда переставив буквы в одном слове мы можем получить второе слово (cat > act)
+
+ Пример: ['cat', 'act', 'dinosaur', 'testing', 'setting']
+ Ответ: ['cat', 'act', 'testing', 'setting']
+ */
+
 fun main(args: Array<String>){
 
     class WordWithIndex(val word: String, val index: Int)
