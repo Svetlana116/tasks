@@ -4,8 +4,6 @@ fun main(args: Array<String>){
 
     fun charSort(word: String) = word.toCharArray().sorted().joinToString("")
 
-    fun wordArraySort(array: Array<WordWithIndex>) = array.sortedArrayWith { a,b -> a.word.compareTo(b.word)}
-
     fun getAnagrams(words: List<String>) : List<String> =
         words
             .mapIndexed { index, s -> WordWithIndex(charSort(s), index) }
@@ -17,9 +15,3 @@ fun main(args: Array<String>){
 
     println(getAnagrams(listOf("cat", "act", "dinosaur", "testing", "setting")))
 }
-
-
-
-
-
-
